@@ -1,0 +1,124 @@
+:root{
+    --color-1: #4994BA;
+    --color-2: #F5D261;
+    --color-3: #444E5E;
+    --color-4: #FFFFFF;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: serif;
+    font-weight: normal;
+}
+
+.header{
+    background: var(--color-1);
+    color: var(--color-4);
+    display: flex;
+    padding: 0.9rem;
+    justify-content: space-between;
+}
+nav{
+    width: 55%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ul{
+    width: 75%;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;    
+}
+
+.header h1{
+    font-size: 1.5rem;
+} 
+
+i {
+    display:none !important ;
+    font-size: 30px;
+}
+a {
+    text-decoration: none;
+    color: var(--color-4);
+    font-size: 1.25em;
+    padding-bottom: 10px;
+}
+
+button{
+    padding: 0.8rem 1.3rem;
+    background: var(--color-2);
+    color: var(--color-3);
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 17px;
+    cursor: pointer;
+}
+.main{
+    text-align: center;
+    color: var(--color-4);
+    background: url(../images/display.jpeg); 
+    background-size: cover;
+    padding:20px 10px;
+}
+
+ a:hover, a:active{
+     border-bottom: 4px solid var(--color-3);
+ }
+.main h2{
+    font-size: 2rem;
+    margin: 15px 0;
+}
+.main h1 {
+    color: var(--color-1);
+}
+.main p{
+    font-size: 1.4rem;
+}
+.main button{
+    margin: 2.8rem 0; 
+}
+
+@media screen and (max-width:940px){
+    html {
+        font-size: 14px;
+    }
+    .header button{
+        display: none;
+    }
+    ul{
+        flex-direction: column;
+        display: none;
+    }
+    li{
+        margin: 10px 0;
+    }
+    i {
+        display: inline-block !important;   
+    }
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media only screen and (max-width:380px){
+    html {
+        font-size: 12px;
+    }
+    .main p{
+        font-size: 20px;
+    }
+    .header button{
+        font-size: 12px;
+        display: none;
+    }
+    .header, .main{
+        padding: 10px;
+    }
+}
